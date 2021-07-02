@@ -227,7 +227,7 @@ instance uni ~ DefaultUni => ToBuiltinMeaning uni DefaultFun where
             mempty  -- TODO: budget.
     toBuiltinMeaning Trace =
         makeBuiltinMeaning
-            (emit :: String -> Emitter ())
+            (\s a -> (emit :: String -> Emitter ()) s >> pure a)
             mempty  -- TODO: budget.
     toBuiltinMeaning Nop1 =
         makeBuiltinMeaning
