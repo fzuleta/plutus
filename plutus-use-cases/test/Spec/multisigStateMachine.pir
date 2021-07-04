@@ -7133,14 +7133,19 @@
                                                                                   [
                                                                                     {
                                                                                       (builtin
-                                                                                        trace
+                                                                                        chooseUnit
                                                                                       )
                                                                                       Bool
                                                                                     }
-                                                                                    (con
-                                                                                      string
-                                                                                        "Input constraint"
-                                                                                    )
+                                                                                    [
+                                                                                      (builtin
+                                                                                        trace
+                                                                                      )
+                                                                                      (con
+                                                                                        string
+                                                                                          "Input constraint"
+                                                                                      )
+                                                                                    ]
                                                                                   ]
                                                                                   False
                                                                                 ]
@@ -8572,14 +8577,19 @@
                                                                 [
                                                                   {
                                                                     (builtin
-                                                                      trace
+                                                                      chooseUnit
                                                                     )
                                                                     Bool
                                                                   }
-                                                                  (con
-                                                                    string
-                                                                      "Output constraint"
-                                                                  )
+                                                                  [
+                                                                    (builtin
+                                                                      trace
+                                                                    )
+                                                                    (con
+                                                                      string
+                                                                        "Output constraint"
+                                                                    )
+                                                                  ]
                                                                 ]
                                                                 False
                                                               ]
@@ -12296,14 +12306,19 @@
                                                                             [
                                                                               {
                                                                                 (builtin
-                                                                                  trace
+                                                                                  chooseUnit
                                                                                 )
                                                                                 Bool
                                                                               }
-                                                                              (con
-                                                                                string
-                                                                                  "Missing signature"
-                                                                              )
+                                                                              [
+                                                                                (builtin
+                                                                                  trace
+                                                                                )
+                                                                                (con
+                                                                                  string
+                                                                                    "Missing signature"
+                                                                                )
+                                                                              ]
                                                                             ]
                                                                             False
                                                                           ]
@@ -12331,14 +12346,19 @@
                                                                           [
                                                                             {
                                                                               (builtin
-                                                                                trace
+                                                                                chooseUnit
                                                                               )
                                                                               Bool
                                                                             }
-                                                                            (con
-                                                                              string
-                                                                                "MustHashDatum"
-                                                                            )
+                                                                            [
+                                                                              (builtin
+                                                                                trace
+                                                                              )
+                                                                              (con
+                                                                                string
+                                                                                  "MustHashDatum"
+                                                                              )
+                                                                            ]
                                                                           ]
                                                                           False
                                                                         ]
@@ -12519,14 +12539,19 @@
                                                                                               [
                                                                                                 {
                                                                                                   (builtin
-                                                                                                    trace
+                                                                                                    chooseUnit
                                                                                                   )
                                                                                                   Bool
                                                                                                 }
-                                                                                                (con
-                                                                                                  string
-                                                                                                    "Missing datum"
-                                                                                                )
+                                                                                                [
+                                                                                                  (builtin
+                                                                                                    trace
+                                                                                                  )
+                                                                                                  (con
+                                                                                                    string
+                                                                                                      "Missing datum"
+                                                                                                  )
+                                                                                                ]
                                                                                               ]
                                                                                               False
                                                                                             ]
@@ -12662,14 +12687,19 @@
                                                                             [
                                                                               {
                                                                                 (builtin
-                                                                                  trace
+                                                                                  chooseUnit
                                                                                 )
                                                                                 Bool
                                                                               }
-                                                                              (con
-                                                                                string
-                                                                                  "Value minted not OK"
-                                                                              )
+                                                                              [
+                                                                                (builtin
+                                                                                  trace
+                                                                                )
+                                                                                (con
+                                                                                  string
+                                                                                    "Value minted not OK"
+                                                                                )
+                                                                              ]
                                                                             ]
                                                                             False
                                                                           ]
@@ -12985,14 +13015,19 @@
                                                                                                 [
                                                                                                   {
                                                                                                     (builtin
-                                                                                                      trace
+                                                                                                      chooseUnit
                                                                                                     )
                                                                                                     Bool
                                                                                                   }
-                                                                                                  (con
-                                                                                                    string
-                                                                                                      "MustPayToOtherScript"
-                                                                                                  )
+                                                                                                  [
+                                                                                                    (builtin
+                                                                                                      trace
+                                                                                                    )
+                                                                                                    (con
+                                                                                                      string
+                                                                                                        "MustPayToOtherScript"
+                                                                                                    )
+                                                                                                  ]
                                                                                                 ]
                                                                                                 False
                                                                                               ]
@@ -13060,14 +13095,19 @@
                                                                     [
                                                                       {
                                                                         (builtin
-                                                                          trace
+                                                                          chooseUnit
                                                                         )
                                                                         Bool
                                                                       }
-                                                                      (con
-                                                                        string
-                                                                          "MustPayToPubKey"
-                                                                      )
+                                                                      [
+                                                                        (builtin
+                                                                          trace
+                                                                        )
+                                                                        (con
+                                                                          string
+                                                                            "MustPayToPubKey"
+                                                                        )
+                                                                      ]
                                                                     ]
                                                                     False
                                                                   ]
@@ -13114,14 +13154,19 @@
                                                                 [
                                                                   {
                                                                     (builtin
-                                                                      trace
+                                                                      chooseUnit
                                                                     )
                                                                     Bool
                                                                   }
-                                                                  (con
-                                                                    string
-                                                                      "Produced value not OK"
-                                                                  )
+                                                                  [
+                                                                    (builtin
+                                                                      trace
+                                                                    )
+                                                                    (con
+                                                                      string
+                                                                        "Produced value not OK"
+                                                                    )
+                                                                  ]
                                                                 ]
                                                                 False
                                                               ]
@@ -13268,14 +13313,19 @@
                                                             [
                                                               [
                                                                 {
-                                                                  (builtin trace
+                                                                  (builtin
+                                                                    chooseUnit
                                                                   )
                                                                   Bool
                                                                 }
-                                                                (con
-                                                                  string
-                                                                    "Spent value not OK"
-                                                                )
+                                                                [
+                                                                  (builtin trace
+                                                                  )
+                                                                  (con
+                                                                    string
+                                                                      "Spent value not OK"
+                                                                  )
+                                                                ]
                                                               ]
                                                               False
                                                             ]
@@ -13296,13 +13346,18 @@
                                                         [
                                                           [
                                                             {
-                                                              (builtin trace)
+                                                              (builtin
+                                                                chooseUnit
+                                                              )
                                                               Bool
                                                             }
-                                                            (con
-                                                              string
-                                                                "Public key output not spent"
-                                                            )
+                                                            [
+                                                              (builtin trace)
+                                                              (con
+                                                                string
+                                                                  "Public key output not spent"
+                                                              )
+                                                            ]
                                                           ]
                                                           False
                                                         ]
@@ -13449,13 +13504,18 @@
                                                           [
                                                             [
                                                               {
-                                                                (builtin trace)
+                                                                (builtin
+                                                                  chooseUnit
+                                                                )
                                                                 Bool
                                                               }
-                                                              (con
-                                                                string
-                                                                  "Script output not spent"
-                                                              )
+                                                              [
+                                                                (builtin trace)
+                                                                (con
+                                                                  string
+                                                                    "Script output not spent"
+                                                                )
+                                                              ]
                                                             ]
                                                             False
                                                           ]
@@ -13548,12 +13608,16 @@
                                                       [
                                                         [
                                                           {
-                                                            (builtin trace) Bool
+                                                            (builtin chooseUnit)
+                                                            Bool
                                                           }
-                                                          (con
-                                                            string
-                                                              "Wrong validation interval"
-                                                          )
+                                                          [
+                                                            (builtin trace)
+                                                            (con
+                                                              string
+                                                                "Wrong validation interval"
+                                                            )
+                                                          ]
                                                         ]
                                                         False
                                                       ]
@@ -13617,13 +13681,18 @@
                                                         [
                                                           [
                                                             {
-                                                              (builtin trace)
+                                                              (builtin
+                                                                chooseUnit
+                                                              )
                                                               Bool
                                                             }
-                                                            (con
-                                                              string
-                                                                "checkScriptContext failed"
-                                                            )
+                                                            [
+                                                              (builtin trace)
+                                                              (con
+                                                                string
+                                                                  "checkScriptContext failed"
+                                                              )
+                                                            ]
                                                           ]
                                                           False
                                                         ]
@@ -14371,14 +14440,19 @@
                                                                                                     [
                                                                                                       {
                                                                                                         (builtin
-                                                                                                          trace
+                                                                                                          chooseUnit
                                                                                                         )
                                                                                                         Bool
                                                                                                       }
-                                                                                                      (con
-                                                                                                        string
-                                                                                                          "State transition invalid - constraints not satisfied by ScriptContext"
-                                                                                                      )
+                                                                                                      [
+                                                                                                        (builtin
+                                                                                                          trace
+                                                                                                        )
+                                                                                                        (con
+                                                                                                          string
+                                                                                                            "State transition invalid - constraints not satisfied by ScriptContext"
+                                                                                                        )
+                                                                                                      ]
                                                                                                     ]
                                                                                                     False
                                                                                                   ]
@@ -14419,14 +14493,19 @@
                                                                                                             [
                                                                                                               {
                                                                                                                 (builtin
-                                                                                                                  trace
+                                                                                                                  chooseUnit
                                                                                                                 )
                                                                                                                 Bool
                                                                                                               }
-                                                                                                              (con
-                                                                                                                string
-                                                                                                                  "Non-zero value allocated in final state"
-                                                                                                              )
+                                                                                                              [
+                                                                                                                (builtin
+                                                                                                                  trace
+                                                                                                                )
+                                                                                                                (con
+                                                                                                                  string
+                                                                                                                    "Non-zero value allocated in final state"
+                                                                                                                )
+                                                                                                              ]
                                                                                                             ]
                                                                                                             False
                                                                                                           ]
@@ -14588,14 +14667,19 @@
                                                                                               [
                                                                                                 {
                                                                                                   (builtin
-                                                                                                    trace
+                                                                                                    chooseUnit
                                                                                                   )
                                                                                                   Bool
                                                                                                 }
-                                                                                                (con
-                                                                                                  string
-                                                                                                    "State transition invalid - constraints not satisfied by ScriptContext"
-                                                                                                )
+                                                                                                [
+                                                                                                  (builtin
+                                                                                                    trace
+                                                                                                  )
+                                                                                                  (con
+                                                                                                    string
+                                                                                                      "State transition invalid - constraints not satisfied by ScriptContext"
+                                                                                                  )
+                                                                                                ]
                                                                                               ]
                                                                                               False
                                                                                             ]
@@ -14623,14 +14707,19 @@
                                                                   [
                                                                     {
                                                                       (builtin
-                                                                        trace
+                                                                        chooseUnit
                                                                       )
                                                                       Bool
                                                                     }
-                                                                    (con
-                                                                      string
-                                                                        "State transition invalid - input is not a valid transition at the current state"
-                                                                    )
+                                                                    [
+                                                                      (builtin
+                                                                        trace
+                                                                      )
+                                                                      (con
+                                                                        string
+                                                                          "State transition invalid - input is not a valid transition at the current state"
+                                                                      )
+                                                                    ]
                                                                   ]
                                                                   False
                                                                 ]
@@ -14669,14 +14758,19 @@
                                                                           [
                                                                             {
                                                                               (builtin
-                                                                                trace
+                                                                                chooseUnit
                                                                               )
                                                                               Bool
                                                                             }
-                                                                            (con
-                                                                              string
-                                                                                "State transition invalid - checks failed"
-                                                                            )
+                                                                            [
+                                                                              (builtin
+                                                                                trace
+                                                                              )
+                                                                              (con
+                                                                                string
+                                                                                  "State transition invalid - checks failed"
+                                                                              )
+                                                                            ]
                                                                           ]
                                                                           False
                                                                         ]

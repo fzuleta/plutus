@@ -39,20 +39,17 @@
           [
             { error a }
             [
-              [
-                {
+              {
+                [
+                  Unit_match
                   [
-                    Unit_match
-                    [
-                      [ { (builtin chooseUnit) Unit } [ (builtin trace) str ] ]
-                      Unit
-                    ]
+                    [ { (builtin chooseUnit) Unit } [ (builtin trace) str ] ]
+                    Unit
                   ]
-                  (fun Unit (con unit))
-                }
-                (lam thunk Unit (con unit ()))
-              ]
-              Unit
+                ]
+                (con unit)
+              }
+              (con unit ())
             ]
           ]
         )

@@ -4257,6 +4257,11 @@
                             )
                           )
                           (termbind
+                            (nonstrict)
+                            (vardecl scheckHashConstraints (con unit))
+                            [ (builtin trace) (con string "DecodingError") ]
+                          )
+                          (termbind
                             (strict)
                             (vardecl
                               scheckHashConstraints
@@ -4271,10 +4276,10 @@
                                 [
                                   [
                                     {
-                                      (builtin trace)
+                                      (builtin chooseUnit)
                                       [[Either SignedMessageCheckError] [[Tuple2 [Observation [[(lam k (type) (lam v (type) [List [[Tuple2 k] v]])) (con bytestring)] [[(lam k (type) (lam v (type) [List [[Tuple2 k] v]])) (con bytestring)] (con integer)]]]] [[TxConstraints i] o]]]
                                     }
-                                    (con string "DecodingError")
+                                    scheckHashConstraints
                                   ]
                                   { { scheckHashConstraints o } i }
                                 ]
