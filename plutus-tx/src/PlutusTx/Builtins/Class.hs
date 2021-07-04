@@ -1,4 +1,3 @@
-{-# LANGUAGE BangPatterns             #-}
 {-# LANGUAGE StandaloneKindSignatures #-}
 {-# LANGUAGE TypeFamilies             #-}
 {-# OPTIONS_GHC -Wno-orphans #-}
@@ -57,10 +56,10 @@ instance ToBuiltin Bool where
 type instance BuiltinRep () = BuiltinUnit
 instance FromBuiltin () where
     {-# INLINABLE fromBuiltin #-}
-    fromBuiltin _ = ()
+    fromBuiltin u = chooseUnit u ()
 instance ToBuiltin () where
     {-# INLINABLE toBuiltin #-}
-    toBuiltin !_ = unitval
+    toBuiltin x = case x of () -> unitval
 
 type instance BuiltinRep ByteString = BuiltinByteString
 instance FromBuiltin ByteString where

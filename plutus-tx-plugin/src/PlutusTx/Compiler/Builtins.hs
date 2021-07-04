@@ -204,6 +204,7 @@ builtinNames = [
 
     , ''Builtins.BuiltinUnit
     , 'Builtins.unitval
+    , 'Builtins.chooseUnit
 
     , ''Builtins.BuiltinPair
     , 'Builtins.fst
@@ -253,6 +254,7 @@ defineBuiltinTerms = do
     defineBuiltinTerm 'Builtins.false $ PIR.mkConstant () False
 
     defineBuiltinTerm 'Builtins.unitval $ PIR.mkConstant () ()
+    defineBuiltinTerm 'Builtins.chooseUnit $ mkBuiltin PLC.ChooseUnit
 
     -- Bytestring builtins
     defineBuiltinTerm 'Builtins.concatenate $ mkBuiltin PLC.Concatenate

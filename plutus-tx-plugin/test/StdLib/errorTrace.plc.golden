@@ -23,7 +23,13 @@
             [
               [
                 {
-                  [ Unit_match [ [ { (builtin trace) Unit } str ] Unit ] ]
+                  [
+                    Unit_match
+                    [
+                      [ { (builtin chooseUnit) Unit } [ (builtin trace) str ] ]
+                      Unit
+                    ]
+                  ]
                   (fun Unit (con unit))
                 }
                 (lam thunk Unit (con unit ()))

@@ -1,4 +1,3 @@
-{-# LANGUAGE BangPatterns #-}
 {-# OPTIONS_GHC -fno-omit-interface-pragmas #-}
 -- | Primitive names and functions for working with Plutus Core builtins.
 module PlutusTx.Builtins (
@@ -195,7 +194,7 @@ equalsString x y = fromBuiltin (BI.equalsString x y)
 {-# INLINABLE trace #-}
 -- | Emit the given string as a trace message before evaluating the argument.
 trace :: BuiltinString -> a -> a
-trace = BI.trace
+trace s = BI.chooseUnit (BI.trace s)
 
 {-# INLINABLE encodeUtf8 #-}
 -- | Convert a String into a ByteString.
