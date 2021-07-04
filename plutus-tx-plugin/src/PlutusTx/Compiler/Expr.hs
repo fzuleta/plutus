@@ -538,7 +538,7 @@ compileExpr e = withContextM 2 (sdToTxt $ "Compiling expr:" GHC.<+> GHC.ppr e) $
                 isPureAlt <- forM dcs $ \dc ->
                     let (_, vars, body) = findAlt dc alts t
                     in if null vars then PIR.isPure (const PIR.NonStrict) <$> compileExpr body else pure True
-                let lazyCase = not $ and isPureAlt
+                let lazyCase = not (and isPureAlt || length dcs == 1)
 
                 match <- getMatchInstantiated scrutineeType
                 let matched = PIR.Apply () match scrutinee'
